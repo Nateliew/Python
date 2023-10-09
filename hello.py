@@ -20,8 +20,12 @@ if age>=18:
         while i < 5:
              
             if guess == randomNum:
-                    print("You won!")
-                    break
+                    if i == 1:
+                       print("Congratulations on your first try! You won!")
+                       break
+                    else:
+                        print("You won!")
+                        break
             else: 
                 int(input("You have " + str(5-i)  + " chances. Guess again: "))
                 i +=1
